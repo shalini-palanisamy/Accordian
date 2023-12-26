@@ -1,0 +1,47 @@
+.container {
+    padding: 5vb;
+    padding-bottom: 0%;
+    width: 500px;
+  }
+  .form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .pass {
+    margin-top: 4vh;
+  }
+  .form-group div input {
+    margin-top: 5px;
+    width: 270px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  button {
+    width: 8vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: rgb(128, 126, 126);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(128, 126, 126);
+    margin-top: 5vb;
+    cursor: pointer;
+  }
+  button:hover {
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1); /* Background color on hover */
+  }
+  input.ng-invalid.ng-touched {
+    border: red 1px solid;
+  }
+  small {
+    color: red;
+  }
+  .error {
+    margin-top: 5px;
+    color: red;
+    font-weight: bolder;
+  }

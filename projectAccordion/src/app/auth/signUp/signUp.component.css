@@ -1,0 +1,85 @@
+/* Style for the container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  width: 850px; /* Increased width to accommodate both parts */
+  height: 600px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the image part */
+.container div:first-child {
+  flex: 0 0 45%; /* Adjust the width of the image part */
+}
+
+/* Style for the form part */
+.container form {
+  flex: 0 0 50%; /* Adjust the width of the form part */
+  padding: 20px;
+}
+
+/* Additional styles for consistency */
+h2 {
+  color:#e31837;
+  text-align: center;
+}
+
+.form-group {
+  margin-left: 5%;
+}
+
+.form-group label {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-group div input {
+  margin-top: 5px;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+button {
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #e31837;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #e31837;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+small {
+  color: red;
+  display: block;
+}
+
+.error {
+  font-size: 18px;
+  margin-left: 6%;
+  color: red;
+  font-weight: bolder;
+}

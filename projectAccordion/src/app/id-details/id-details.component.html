@@ -1,0 +1,4 @@
+<div class="heading" (click)="toggle()">{{ title }}</div>
+    <div class="content" *ngIf="isOpen">
+      <ng-content></ng-content>
+    </div>

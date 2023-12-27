@@ -1,0 +1,10 @@
+.heading {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+  }
+  .content {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }

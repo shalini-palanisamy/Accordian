@@ -1,0 +1,14 @@
+<form [formGroup]="myForm">
+    <!-- Other form controls... -->
+  
+    <!-- Datepicker control -->
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input matInput [matDatepicker]="picker" formControlName="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </div>
+  
+    <!-- Submit button or other form controls... -->
+  </form>
+  

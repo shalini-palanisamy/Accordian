@@ -1,0 +1,63 @@
+<!-- accordion.component.html -->
+<div id="container">
+  <div class="item" [ngClass]="{ 'active': item.active }" *ngFor="let item of items; let index = index">
+    <div class="display" (click)="itemClicked(index)">
+      <div class="heading-and-status">
+        <div class="heading">{{ item.title }}</div>
+        <div class="status" *ngIf="item.active" >-</div>
+        <div class="status" *ngIf="!item.active">+</div>
+      </div>
+    </div>
+        <div class="content" *ngIf="item.active">
+          <div class="content-container">
+            <ng-container [ngSwitch]="item.title">
+              <div class="scrolling-message">
+                <div *ngSwitchCase="'IDP'">
+                  <img src="assets/idp.jpg" alt="Profile Image" width="200px" height="200px">
+                  <p>IDP Education is an international education organization that helps students, 
+                    from around the world, pursue their higher education goals. 
+                    The company operates in the education and migration services sector, 
+                    facilitating the process for students who wish to study abroad.</p>
+                </div>
+                <div *ngSwitchCase="'SERVICES PROVIDED'">
+                  <img src="assets/Service.png" alt="Profile Image" width="200px" height="200px">
+                  <p>
+                    Student Placement Services: IDP assists students in finding suitable study programs and 
+                    institutions abroad based on their academic background, interests, and career goals.
+                    IELTS Testing: IDP is a co-owner of the International English Language Testing System (IELTS), 
+                    a widely recognized English language proficiency test. They offer IELTS testing services globally.
+                  </p>
+                </div>
+                <div *ngSwitchCase="'IELTS'">
+                  <img src="assets/ielts.png" alt="Profile Image" width="200px" height="200px">
+                  <p>IELTS, or the International English Language Testing System, is a standardized test 
+                    designed to assess the language proficiency of individuals who want to study or work in environments 
+                    where English is used as the language of communication. 
+                    IELTS is widely recognized and accepted by universities, employers, and immigration
+                     authorities in many English-speaking countries.</p>   
+                </div>
+                <div *ngSwitchCase="'IELTS Information'">
+                  <img src="assets/info.jpg" alt="Profile Image" width="200px" height="200px">
+                  <p>
+                    IELTS, or the International English Language Testing System, 
+                    is a standardized test designed to assess the language proficiency of individuals who want to study, 
+                    work, or migrate to countries where English is used as the language of communication. 
+                    Here is some key information about IELTS:
+                 Test Components:
+
+                 Listening: Assessing the ability to understand spoken English in various contexts.
+                 Reading: Evaluating reading skills through a range of texts and exercises.
+                 Writing: Testing the ability to express ideas in a written form.
+                 Speaking: Assessing oral communication skills through face-to-face interviews.
+                  </p>
+                </div>
+              </div>          
+              <div *ngSwitchDefault>
+                {{ item.content }}
+              </div>
+            </ng-container>
+          </div>        
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,81 @@
+/* Container Styles */
+.container {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 800px; /* Changed from 50vb to 50vw */
+    height: 400px;
+    background-color: white; /* Set the background color to white */
+    border: 1px solid #ccc; /* Add a border for separation */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Styles */
+  .selectButton {
+    display: flex;
+  }
+  
+  button {
+    width: 50%;
+    height: 5vh;
+    border: none;
+    background-color: rgb(128, 126, 126);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .admin {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+  
+  .user {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  /* Active Button Styles */
+  button:active {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sign-In Section Styles */
+  .renderSignIn {
+    padding-left: 30vw; /* Changed from 5vb to 5vw */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  p {
+    margin-top: 10px;
+  }
+  .renderSignIn a {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .renderSignIn a:hover {
+    color: rgba(0, 0, 0, 0.1);
+  }
+  #signup {
+    color: #e31837;
+    padding: 0px;
+    margin: 0px;
+    width: 0px;
+    background-color: transparent; /* Set background color to transparent */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline on focus (optional) */
+    cursor: pointer; /* Set cursor to pointer for better UX */
+    /* Add any additional styles as needed */
+  }
+  
+  /* If you want to remove the default styles on hover or focus */
+  #signup:hover,
+  #signup:focus {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }

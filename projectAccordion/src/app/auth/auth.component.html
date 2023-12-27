@@ -1,0 +1,11 @@
+<div class="container">
+
+    <div *ngIf="logInRenderUser">
+      <app-logIn></app-logIn>
+      <div class="renderSignIn">
+        <p>Create an account</p>
+        <button (click)="signUp()" id="signup">SignUp</button>
+      </div>
+    </div>
+    
+  </div>
